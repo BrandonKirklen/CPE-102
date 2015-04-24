@@ -1,0 +1,344 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{gensymb}
+
+\usetikzlibrary{automata,positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor): \hmwkTitle}
+\rhead{Chapter}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Chapter \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Chapter \arabic{#1} (continued)}{Chapter \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Chapter \arabic{#1} (continued)}{Chapter \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Chapter \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Chapter \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Chapter \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Home Assignment}
+\newcommand{\hmwkDueDate}{2015-4-6}
+\newcommand{\hmwkClass}{CPE 102}
+\newcommand{\hmwkClassTime}{9:10 AM}
+\newcommand{\hmwkClassInstructor}{Meera Jani}
+\newcommand{\hmwkAuthorName}{Brandon Kirklen}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:10pm}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor}}
+    \vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Chapter \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+\begin{homeworkProblem}[1]
+\subsection{Self Check Problems}
+
+\begin{enumerate}
+
+  \item What is required to play music on a computer?
+  	\begin{itemize}
+    	\item Some type of computer program to interpret audio files and then drives a speaker to play sound.
+  	\end{itemize}
+
+  \item Why is a CD player less flexible than a computer?
+    \begin{itemize}
+    	\item It has a single function. However, saying that it cannot execute programs is wrong. The firmware code is still a program.
+  	\end{itemize}
+
+  \item What does a computer user need to know about programming in order to play a video game?
+    \begin{itemize}
+    	\item A high level GUI user does not need to know the base level programming language to play a typical video game.
+  	\end{itemize}
+
+  \item Where is a program stored when it is not currently running?
+  	\begin{itemize}
+    	\item In some sort of permanent media, hard drive or solid state memory typically.
+  	\end{itemize}
+
+  \item Which part of the computer carries out arithmetic operations, such as addition and multiplication?
+    \begin{itemize}
+    	\item The CPU in the case of a serially executed operation and the GPU if parallel.
+  	\end{itemize}
+
+  \item A modern smartphone is a computer, comparable to a desktop computer. Which components of a smartphone correspond to those shown in Figure 3?
+    \begin{itemize}
+    	\item All the listed components are there. Peripherals look slightly different given modern touch screen interfaces but memory, CPU, disks, and network controllers are all there. Add in a decent integrated graphics card and you'll have the major components.  
+  	\end{itemize}
+
+  \item What are the two most important benefits of the Java language?
+    \begin{itemize}
+    	\item According to the book, safety and portability. I would argue that the more important benefit would be the library back end as well as the large corporate sponser who makes it cross platform, oracle.
+  	\end{itemize}
+
+  \item How long does it take to learn the entire Java library?
+    \begin{itemize}
+    	\item This is not a feasible goal, nor would it be very helpful. Knowing what you need to do, then looking for a class to match would be much more useful than straight memorization. 
+  	\end{itemize}
+
+  \item Where is the HelloPrinter.java file stored on your computer?
+    \begin{itemize}
+    	\item The file is stored in a folder somewhere on your computer. It can be saved wherever you want.
+  	\end{itemize}
+
+  \item What do you do to protect yourself from data loss when you work on programming
+projects?
+    \begin{itemize}
+    	\item Use some sort of version control would be the ideal solution. An alternative is saving versions every so often. Also keeping backups is a good idea.
+  	\end{itemize}
+
+  \item How do you modify the HelloPrinter program to greet you instead?
+    \begin{itemize}
+    	\item Tell the print function to return "Hello, Brandon" by replacing the word "world." This just changes the hard codes string. 
+  	\end{itemize}
+
+  \item How would you modify the HelloPrinter program to print the word “Hello”
+vertically?
+    \begin{itemize}
+	   	\item I would call the function System.getProperty("line.separator") and assign it to a variable then use that in the println function between each letter. Repeatedly calling println is inefficient. 
+  	\end{itemize}
+
+  \item Would the program continue to work if you replaced line 7 with this statement?
+System.out.println(Hello);
+    \begin{itemize}
+    	\item No. The print function needs input of a string and this is not delimited by quotes. 
+  	\end{itemize}
+
+  \item What does the following set of statements print?
+  	\begin{verbatim}
+		System.out.print("My lucky number is");
+		System.out.println(3 + 4 + 5);
+  	\end{verbatim}
+    \begin{itemize}
+    	\item This would print out "My lucky number is12" without the quotes of course. 
+  	\end{itemize}
+
+  \item What do the following set of statements print?
+  	\begin{verbatim}
+		System.out.println("Hello");
+		System.out.println("");
+		System.out.println("World");
+  	\end{verbatim}
+    \begin{itemize}
+    	\item This would print out 
+    	\begin{verbatim}
+    	Hello
+    	
+    	World
+		\end{verbatim}
+    	New line included.
+  	\end{itemize}
+
+  \item Suppose you omit the "" characters around Hello, World! from the HelloPrinter.
+java program. Is this a compile-time error or a run-time error?
+    \begin{itemize}
+    	\item This would be a compile-time error as long as Hello and World had not been defined elsewhere to mean anything.
+  	\end{itemize}
+
+  \item Suppose you change println to printline in the HelloPrinter.java program. Is this a compile-time error or a run-time error?
+    \begin{itemize}
+    	\item This is also a compile time error. System.out does not have a method called printline.  
+  	\end{itemize}
+  	
+  \item Suppose you change main to hello in the HelloPrinter.java program. Is this a
+compile-time error or a run-time error? 
+    \begin{itemize}
+    	\item This is a run time error. Having a method named "hello" is legal but there would be no program to run when it came time.  
+  	\end{itemize}
+  	
+  \item When you used your computer, you may have experienced a program that “crashed” (quit spontaneously) or “hung” (failed to respond to your input). Is that behavior a compile-time error or a run-time error?
+    \begin{itemize}
+    	\item This is a run time error. Most computer programs are not compiled on the end users computer but rather compiled and then installed. Some linux programs violate this paradigm but generally true. Also if the program is already  
+  	\end{itemize}
+
+  \item Why can’t you test a program for run-time errors when it has compiler errors?
+    \begin{itemize}
+    	\item If you can't compile a program then you can't run it to find errors later. 
+  	\end{itemize}
+  	
+  \item Suppose the interest rate was 20 percent. How long would it take for the investment to double?
+    \begin{itemize}
+    	\item This depends on the time between compounds. But using the formula $A=P(1+\frac{r}{n})^{nt}$ we can plug in $2=(1+\frac{.2}{1})^{t*1}$ and solve for $t$ getting $t=\frac{\log(2)}{\log(6/5)}=3.8\approx4$. For the investment to double at this rate, it would take 4 compounds. Assuming compounded yearly, as well as an annualized interest rate, the investment would double in 4 years.
+  	\end{itemize}
+  	
+  \item Suppose your cell phone carrier charges you \$29.95 for up to 300 minutes of calls, and \$0.45 for each additional minute, plus 12.5 percent taxes and fees. Give an algorithm to compute the monthly charge from a given number of minutes.
+    \begin{itemize}
+    	\item 
+\begin{verbatim}
+Add base price to total price
+Check to see if total minutes is greater than the number given for free.
+If greater than number given free 
+Subtract number given for free
+Multiply by cost per minute
+Add to total price
+Multiply total price by taxes
+Return total price
+\end{verbatim}   
+  	\end{itemize}
+
+  \item Consider the following pseudocode for finding the most attractive photo from a
+sequence of photos:
+\begin{verbatim}
+Pick the first photo and call it "the best so far".
+For each photo in the sequence
+If it is more attractive than the "best so far"
+Discard "the best so far".
+Call this photo "the best so far".
+The photo called "the best so far" is the most attractive photo in the sequence.
+\end{verbatim}
+Is this an algorithm that will find the most attractive photo?
+    \begin{itemize}
+    	\item  This code doesn't specify how the most attractive photo will be found. Attraction is not a metric a computer understands.
+  	\end{itemize} 
+
+  \item Suppose each photo in Self Check 23 had a price tag. Give an algorithm for finding the most expensive photo.
+    \begin{itemize}
+    	\item 
+\begin{verbatim}
+Pick the first photo and call it "bank breaker".
+For each photo in the sequence
+If it is more expensive than the "bank breaker"
+Discard "bank breaker".
+Call this photo "bank breaker".
+The photo called "bank breaker" is the most expensive photo in the sequence.
+\end{verbatim} 
+  	\end{itemize}
+  	
+  	\item Suppose you have a random sequence of black and white marbles and want to
+rearrange it so that the black and white marbles are grouped together. Consider
+this algorithm:
+\begin{verbatim}
+Repeat until sorted
+Locate the first black marble that is preceded by a white marble, and switch them.
+\end{verbatim}
+What does the algorithm do with the sequence "WBWBB"? Spell out the steps
+until the algorithm stops.
+	\begin{itemize}
+		\item We'll use W and B to mean white and black.
+\begin{verbatim}
+WBWBB
+BWWBB
+BWBWB
+BBWWB
+BBWBW
+BBBWW
+\end{verbatim}
+	\end{itemize}
+	
+  \item Suppose you have a random sequence of colored marbles. Consider this pseudocode: Repeat until sorted Locate the first marble that is preceded by a marble of a different color, and switch them. Why is this not an algorithm?
+    \begin{itemize}
+    	\item  This code would just switch the first set of differently colored marbles forever because there's no way for the code to complete. It would just run forever.
+  	\end{itemize}
+\end{enumerate}
+\end{homeworkProblem}
+
+
+%%%% Lecture 2 %%%%
