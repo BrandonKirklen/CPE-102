@@ -5,13 +5,12 @@ package Polygon;
  *  A polygon is a closed curve made up from line segments
  that join the corner points.
  */
-import java.awt.geom.Point2D;
 import java.util.ArrayList;
 
 public class Polygon
 {
-
-
+    private double X, Y;
+    ArrayList<Polygon.Coordinate<X,Y>> cordinateList = new ArrayList<Polygon.Coordinate<X,Y>>();
     /**
      Constructs a polygon with no corner points.
      */
