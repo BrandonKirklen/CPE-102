@@ -28,11 +28,12 @@ public class PieChart {
         {
             sum += d;
         }
-        for (int i=0; i < valuesCollection.size()-1; i++)
+        System.out.println(sum);
+        for (int i=0; i < valuesCollection.size(); i++)
         {
             Line2D.Double line = new Line2D.Double(width/2, height/2,
-                    width/2 + width/2*Math.cos((valuesCollection.get(i)/sum)*100*2*Math.PI),
-                    height/2 + height/2*Math.sin((valuesCollection.get(i)/sum)*100*2*Math.PI));
+                    width/2.0 * (1.0 + Math.cos((valuesCollection.get(i)/sum)*100*2*Math.PI)),
+                    height/2.0 * (1.0 + Math.sin((valuesCollection.get(i)/sum)*100*2*Math.PI)));
             g2.draw(line);
         }
 
