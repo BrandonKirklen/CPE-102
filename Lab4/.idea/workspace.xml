@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b987e2a-ecfd-48fb-87d8-7da109b4a6ff" name="Default" comment="">
+    <list id="7b987e2a-ecfd-48fb-87d8-7da109b4a6ff" name="Default" comment="" />
+    <list default="true" id="0b209ea8-e159-4860-b4b2-d01d22acc045" name="Pie Chart" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieChart/ChartViewer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cloud/CloudComponent.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieChart/PieChart.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieChart/PieChartComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cloud/Cloud.java" afterPath="$PROJECT_DIR$/src/Cloud/Cloud.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Lab4.iws" />
@@ -522,11 +521,12 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7b987e2a-ecfd-48fb-87d8-7da109b4a6ff" name="Default" comment="" />
+      <changelist id="0b209ea8-e159-4860-b4b2-d01d22acc045" name="Pie Chart" comment="" />
       <created>1429989202480</created>
       <option name="number" value="Default" />
       <updated>1429989202480</updated>
       <workItem from="1429989208738" duration="29000" />
-      <workItem from="1429989533294" duration="19347000" />
+      <workItem from="1429989533294" duration="19388000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon Init">
       <created>1429990392119</created>
@@ -558,11 +558,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430106233814</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Working Cloud">
+      <created>1430126155090</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1430126155090</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19376000" />
+    <option name="totallyTimeSpent" value="19417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="250" y="17" width="1065" height="860" extended-state="0" />
@@ -608,7 +614,9 @@
     <MESSAGE value="Area commit 1" />
     <MESSAGE value="Corrected area formula" />
     <MESSAGE value="Cloud Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cloud Init" />
+    <MESSAGE value="Working Cloud" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working Cloud" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
