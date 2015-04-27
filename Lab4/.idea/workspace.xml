@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="7b987e2a-ecfd-48fb-87d8-7da109b4a6ff" name="Default" comment="" />
-    <list default="true" id="0b209ea8-e159-4860-b4b2-d01d22acc045" name="Pie Chart" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieChart/ChartViewer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieChart/PieChart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieChart/PieChartComponent.java" />
+    <list default="true" id="0b209ea8-e159-4860-b4b2-d01d22acc045" name="Pie Chart" comment="Pie Chart Init">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PieChart/PieChart.java" afterPath="$PROJECT_DIR$/src/PieChart/PieChart.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Lab4.iws" />
@@ -77,8 +75,8 @@
       <file leaf-file-name="PieChart.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PieChart/PieChart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32142857">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.60714287">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -526,7 +524,7 @@
       <option name="number" value="Default" />
       <updated>1429989202480</updated>
       <workItem from="1429989208738" duration="29000" />
-      <workItem from="1429989533294" duration="19388000" />
+      <workItem from="1429989533294" duration="19415000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon Init">
       <created>1429990392119</created>
@@ -564,11 +562,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430126155090</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Pie Chart Init">
+      <created>1430126184104</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1430126184104</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19417000" />
+    <option name="totallyTimeSpent" value="19444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="250" y="17" width="1065" height="860" extended-state="0" />
@@ -615,7 +619,8 @@
     <MESSAGE value="Corrected area formula" />
     <MESSAGE value="Cloud Init" />
     <MESSAGE value="Working Cloud" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working Cloud" />
+    <MESSAGE value="Pie Chart Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pie Chart Init" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -703,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieChart/PieChart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32142857">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.60714287">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

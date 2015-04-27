@@ -7,5 +7,11 @@ import java.awt.*;
  */
 public class PieChart {
     public void add(double value)
+    {
+
+    }
     public void draw(Graphics2D g2)
+    {
+
+    }
 }
