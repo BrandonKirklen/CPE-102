@@ -2,6 +2,7 @@ package MagicSquares;
 
 /**
  * Created by Brandon Kirklen on 4/27/2015.
+ * Magic Square
  */
 public class MagicSquare {
     int size;
