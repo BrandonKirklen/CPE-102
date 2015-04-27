@@ -9,15 +9,37 @@ import java.util.ArrayList;
 
 public class Polygon
 {
-    private double X, Y;
-    ArrayList<Polygon.Coordinate<X,Y>> cordinateList = new ArrayList<Polygon.Coordinate<X,Y>>();
+    private class Coordinate<X,Y> {
+        private double x;
+        private double y;
+        public Coordinate(double x, double y){
+            this.x = x;
+            this.y = y;
+        }
+        public double getX()
+        {
+            return x;
+        }
+        public double getY()
+        {
+            return y;
+        }
+        public void setX(double x)
+        {
+            this.x = x;
+        }
+        public void setY(double y)
+        {
+            this.y = y;
+        }
+    }
+
+    ArrayList<Coordinate> coordinateArrayList = new ArrayList<Coordinate>();
+
     /**
      Constructs a polygon with no corner points.
      */
-    public Polygon()
-    {
-
-    }
+    public Polygon(){}
 
     /**
      Adds a corner point to the polygon.
@@ -26,7 +48,8 @@ public class Polygon
      */
     public void add(double x, double y)
     {
-
+        Coordinate cord = new Coordinate(x,y);
+        coordinateArrayList.add(cord);
     }
 
     /**
@@ -35,7 +58,20 @@ public class Polygon
      */
     public double perimeter()
     {
-        return 0;
+        double perimeter=0;
+        for ( int i=0; i < coordinateArrayList.size()-1; i++ )
+        {
+            perimeter += Math.sqrt(
+                    Math.pow(coordinateArrayList.get(i+1).getX() - coordinateArrayList.get(i).getX(),2) +
+                    Math.pow(coordinateArrayList.get(i+1).getY() - coordinateArrayList.get(i).getY(),2));
+        }
+        //
+        perimeter += Math.sqrt(
+                Math.pow(coordinateArrayList.get(coordinateArrayList.size()-1).getX()
+                        - coordinateArrayList.get(0).getX(),2) +
+                Math.pow(coordinateArrayList.get(coordinateArrayList.size()-1).getY()
+                        - coordinateArrayList.get(0).getY(),2));
+        return perimeter;
     }
 
     /**
@@ -44,6 +80,13 @@ public class Polygon
      */
     public double area()
     {
-        return 0;
+        double area=0;
+        for ( int i=0; i < coordinateArrayList.size()-1; i++ )
+        {
+            area += (coordinateArrayList.get(i).getX() * coordinateArrayList.get(i+1).getY())
+                    - (coordinateArrayList.get(i+1).getX() * coordinateArrayList.get(i).getY());
+        }
+        area = 0.5 * Math.abs(area);
+        return area;
     }
 }

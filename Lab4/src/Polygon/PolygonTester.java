@@ -20,18 +20,16 @@ public class PolygonTester
         // construct a regular hexagon
         for (int i = 0; i < 6; i++)
         {
-            double x = 5*i;
-            double y = 3*i;
-            hexagon.add(x, y);
+            hexagon.add(3*i, 5*i);
         }
 
         double squarePerimeter = square.perimeter();
         System.out.println("Square perimeter: " + squarePerimeter);
-        System.out.println("Expected: . . .");
+        System.out.println("Expected: 200");
 
         double squareArea = square.area();
         System.out.println("Square area: " + squareArea);
-        System.out.println("Expected: . . .");
+        System.out.println("Expected: 2500");
 
         double hexagonPerimeter = hexagon.perimeter();
         System.out.println("Hexagon perimeter: " + hexagonPerimeter);
