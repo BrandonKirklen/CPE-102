@@ -29,11 +29,17 @@ public class PieChart {
             sum += d;
         }
         System.out.println(sum);
+        double runningPercent=0;
         for (int i=0; i < valuesCollection.size(); i++)
         {
+            double currentPercent = valuesCollection.get(i)/sum;
+            runningPercent += currentPercent;
+            double angle = (2.0*Math.PI)*(runningPercent*100);
+            System.out.println(currentPercent);
+            System.out.println(runningPercent);
             Line2D.Double line = new Line2D.Double(width/2, height/2,
-                    width/2.0 * (1.0 + Math.cos((valuesCollection.get(i)/sum)*100*2*Math.PI)),
-                    height/2.0 * (1.0 + Math.sin((valuesCollection.get(i)/sum)*100*2*Math.PI)));
+                    width/2.0 * (1.0 + Math.cos(angle)),
+                    height/2.0 * (1.0 + Math.sin(angle)));
             g2.draw(line);
         }
 

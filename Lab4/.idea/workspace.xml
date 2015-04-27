@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PieChartComponent.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PieChartComponent.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PieChart/PieChartComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.5819328">
               <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PieChart.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PieChart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PieChart/PieChart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75">
-              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#414#415#0" expanded="true" />
@@ -557,7 +557,7 @@
       <option name="number" value="Default" />
       <updated>1429989202480</updated>
       <workItem from="1429989208738" duration="29000" />
-      <workItem from="1429989533294" duration="25992000" />
+      <workItem from="1429989533294" duration="26954000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon Init">
       <created>1429990392119</created>
@@ -619,11 +619,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430132251779</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Pie Chart Simiworking">
+      <created>1430132872748</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1430132872748</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26021000" />
+    <option name="totallyTimeSpent" value="26983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="390" y="27" width="1162" height="860" extended-state="0" />
@@ -740,6 +746,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PieChart/PieChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PieChart/ChartViewer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -750,22 +768,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieChart/PieChartComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.5819328">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PieChart/PieChart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
           </folding>
         </state>
       </provider>
