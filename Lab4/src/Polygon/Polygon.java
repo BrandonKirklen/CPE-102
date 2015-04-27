@@ -34,11 +34,18 @@ public class Polygon
         }
     }
 
-    ArrayList<Coordinate> coordinateArrayList = new ArrayList<Coordinate>();
+    ArrayList<Coordinate> coordinateArrayList = new ArrayList<>();
 
     /**
      Constructs a polygon with no corner points.
      */
+
+    static double roundPrecision(double number, int precision)
+    {
+        double shiftingValue = Math.pow(10, precision);
+        return Math.round(number * shiftingValue) / shiftingValue;
+    }
+
     public Polygon(){}
 
     /**
@@ -71,7 +78,7 @@ public class Polygon
                         - coordinateArrayList.get(0).getX(),2) +
                 Math.pow(coordinateArrayList.get(coordinateArrayList.size()-1).getY()
                         - coordinateArrayList.get(0).getY(),2));
-        return perimeter;
+        return roundPrecision(perimeter, 2);
     }
 
     /**
@@ -91,6 +98,6 @@ public class Polygon
                 - (coordinateArrayList.get(0).getX()
                 * coordinateArrayList.get(coordinateArrayList.size()-1).getY());
         area = 0.5 * Math.abs(area);
-        return area;
+        return roundPrecision(area, 2);
     }
 }

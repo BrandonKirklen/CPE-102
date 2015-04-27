@@ -17,26 +17,27 @@ public class PolygonTester
 
         Polygon hexagon = new Polygon();
 
-        // construct a regular hexagon
-        for (int i = 0; i < 6; i++)
-        {
-            hexagon.add(3*i, 5*i);
-        }
+        hexagon.add(600, 463);
+        hexagon.add(500, 463);
+        hexagon.add(450, 550);
+        hexagon.add(500, 637);
+        hexagon.add(600, 637);
+        hexagon.add(650, 550);
 
         double squarePerimeter = square.perimeter();
         System.out.println("Square perimeter: " + squarePerimeter);
-        System.out.println("Expected: 200");
+        System.out.println("Expected: 200.00");
 
         double squareArea = square.area();
         System.out.println("Square area: " + squareArea);
-        System.out.println("Expected: 2500");
+        System.out.println("Expected: 2500.00");
 
         double hexagonPerimeter = hexagon.perimeter();
         System.out.println("Hexagon perimeter: " + hexagonPerimeter);
-        System.out.println("Expected: . . .");
+        System.out.println("Expected: 601.38");
 
         double hexagonArea = hexagon.area();
         System.out.println("Hexagon area: " + hexagonArea);
-        System.out.println("Expected: . . .");
+        System.out.println("Expected: 26100.00");
     }
 }
