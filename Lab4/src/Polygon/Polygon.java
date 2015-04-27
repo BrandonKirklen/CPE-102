@@ -86,6 +86,10 @@ public class Polygon
             area += (coordinateArrayList.get(i).getX() * coordinateArrayList.get(i+1).getY())
                     - (coordinateArrayList.get(i+1).getX() * coordinateArrayList.get(i).getY());
         }
+        area += (coordinateArrayList.get(coordinateArrayList.size()-1).getX()
+                * coordinateArrayList.get(0).getY())
+                - (coordinateArrayList.get(0).getX()
+                * coordinateArrayList.get(coordinateArrayList.size()-1).getY());
         area = 0.5 * Math.abs(area);
         return area;
     }

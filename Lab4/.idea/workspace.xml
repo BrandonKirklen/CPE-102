@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b987e2a-ecfd-48fb-87d8-7da109b4a6ff" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Brandon\AeroFS\College\CPE 102\CPE-102\Lab4\src\Polygon\Coordinate.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Polygon/Polygon.java" afterPath="$PROJECT_DIR$/src/Polygon/Polygon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Polygon/PolygonTester.java" afterPath="$PROJECT_DIR$/src/Polygon/PolygonTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lab3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab3/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Lab4.iws" />
@@ -31,13 +28,14 @@
       <file leaf-file-name="Polygon.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Polygon/Polygon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24056605">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.85714287">
+              <caret line="91" column="70" selection-start-line="91" selection-start-column="70" selection-end-line="91" selection-end-column="70" />
               <folding>
                 <element signature="e#441#442#0" expanded="true" />
                 <element signature="e#473#474#0" expanded="true" />
                 <element signature="e#512#513#0" expanded="true" />
                 <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
                 <element signature="e#623#624#0" expanded="true" />
                 <element signature="e#668#669#0" expanded="true" />
                 <element signature="e#702#703#0" expanded="true" />
@@ -79,8 +77,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Polygon/Pair.java" />
         <option value="$PROJECT_DIR$/src/Polygon/Coordinate.java" />
-        <option value="$PROJECT_DIR$/src/Polygon/Polygon.java" />
         <option value="$PROJECT_DIR$/src/Polygon/PolygonTester.java" />
+        <option value="$PROJECT_DIR$/src/Polygon/Polygon.java" />
       </list>
     </option>
   </component>
@@ -412,7 +410,7 @@
       <option name="number" value="Default" />
       <updated>1429989202480</updated>
       <workItem from="1429989208738" duration="29000" />
-      <workItem from="1429989533294" duration="11429000" />
+      <workItem from="1429989533294" duration="12042000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon Init">
       <created>1429990392119</created>
@@ -426,11 +424,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430001086426</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Area commit 1">
+      <created>1430100809131</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1430100809131</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11458000" />
+    <option name="totallyTimeSpent" value="12071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="384" y="20" width="1204" height="860" extended-state="0" />
@@ -443,14 +447,14 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2718855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39893618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39893618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -473,7 +477,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Polygon Init" />
     <MESSAGE value="Coordinate class init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coordinate class init" />
+    <MESSAGE value="Area commit 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Area commit 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,13 +509,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Polygon/Polygon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24056605">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.85714287">
+          <caret line="91" column="70" selection-start-line="91" selection-start-column="70" selection-end-line="91" selection-end-column="70" />
           <folding>
             <element signature="e#441#442#0" expanded="true" />
             <element signature="e#473#474#0" expanded="true" />
             <element signature="e#512#513#0" expanded="true" />
             <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
             <element signature="e#623#624#0" expanded="true" />
             <element signature="e#668#669#0" expanded="true" />
             <element signature="e#702#703#0" expanded="true" />
