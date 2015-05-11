@@ -23,12 +23,15 @@ public class Student {
         grades.add(grade);
     }
 
-    public double getAverage()
+    public double getFinalGrade()
     {
+        if( grades.size() == 0 ) return 0;
         double sum = 0;
-        for( Double currentValue : grades){
+        double lowest = Integer.MAX_VALUE;
+        for( Double currentValue : grades) {
             sum += currentValue;
+            if (currentValue < lowest) lowest = currentValue;
         }
-        return sum/grades.size();
+        return sum-lowest;
     }
 }

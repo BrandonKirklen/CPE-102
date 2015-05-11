@@ -16,16 +16,31 @@ public class GradeBook {
         while ( true ){
             System.out.println("Enter a student name, Q to quit:");
             String name = input.nextLine();
-            if ( name.equals("Q") ) break;
+            if ( name.equals("Q") || name.equals("q") ) break;
             studentList.add(new Student(name));
         }
-//
-//        for ( Student studentName : studentList ){
-//            System.out.println("Enter scores for " + studentName + ", Q to quit");
-//            Double grade = input.nextDouble();
-//            while ( input.hasNext() ){
-//                studentName.putGrade(grade);
-//            }
-//        }
+        for ( Student studentName : studentList ) {
+            System.out.println("Enter scores for " + studentName + ", Q to quit:");
+            boolean loop = true;
+            do {
+                String scores = input.nextLine();
+                String[] scoreSplit = scores.split(" ");
+                for (String score : scoreSplit) {
+                    if ( score.equals("q") || score.equals("Q")) {
+                        loop = false;
+                    }
+                    else {
+                        studentName.putGrade( Double.parseDouble(score) );
+                    }
+                }
+            }
+            while ( loop == true );
+        }
+
+        for ( Student studentName : studentList ){
+            System.out.print(studentName + ": ");
+            System.out.printf("%.2f", studentName.getFinalGrade());
+            System.out.println();
+        }
     }
 }
