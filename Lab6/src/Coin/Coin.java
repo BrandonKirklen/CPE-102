@@ -44,11 +44,10 @@ public class Coin {
     public void read(Scanner in) throws IOException
     {
         try{
-            String name = in.next();
-            double value = in.nextDouble();
+            this.name = in.next();
+            this.value = in.nextDouble();
         } catch ( InputMismatchException e ) {
             System.out.println("java.io.IOException: Coin value must be of type double.");
-            read(in);
         }
     }
 
@@ -71,7 +70,7 @@ public class Coin {
             input = new Scanner(new File(filename));
         }
 
-        while (input.hasNext()) {
+        while ( input.hasNext() ) {
             Coin c = new Coin();
             c.read(input);
             coins.add(c);
