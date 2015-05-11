@@ -15,14 +15,21 @@ public class MonetaryUnit {
     private int quantity;
     private String munz;
 
-    public MonetaryUnit(String munz, int quantity)
-    {
+    public MonetaryUnit(String munz, int quantity) {
         this.quantity=quantity;
         this.munz=munz;
     }
 
-    public double getTotal()
-    {
-        return total;
+    public double getTotal() {
+        double currencyValue = 0;
+        switch ( munz ){
+            case "penny" : currencyValue = penny; break;
+            case "nickel" :  currencyValue = nickel; break;
+            case "dime" : currencyValue = dime; break;
+            case "quarter" : currencyValue = quarter; break;
+            case "halfDollar" :  currencyValue = halfDollar; break;
+            case "dollar" : currencyValue = dollar; break;
+        }
+        return currencyValue * quantity;
     }
 }
