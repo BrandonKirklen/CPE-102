@@ -2,6 +2,7 @@ package Questions;
 
 /**
  * Created by Brandon Kirklen on 5/12/2015.
+ * Creates new question type
  */
 public class NumericQuestion extends Question{
     private double correctResponse;

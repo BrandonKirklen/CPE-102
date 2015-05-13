@@ -46,4 +46,8 @@ public class Question
     {
         System.out.println(text);
     }
+
+    public String toString(){
+        return "Question[text=" + this.text + ",answer=" + this.answer +"]";
+    }
 }
