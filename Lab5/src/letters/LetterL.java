@@ -6,6 +6,7 @@ import java.awt.geom.Point2D;
 
 /**
  * Created by Brandon Kirklen on 5/12/2015.
+ * Makes a letter L
  */
 public class LetterL {
     private double x, y;
@@ -16,9 +17,9 @@ public class LetterL {
         y=p.getY();
     }
     public void draw(Graphics2D g2){
-        Line2D.Double vertical = new Line2D.Double(x,y,x,height);
+        Line2D.Double vertical = new Line2D.Double(x,y,x,y + height);
         g2.draw(vertical);
-        Line2D.Double bottom = new Line2D.Double(x,y,width,y);
+        Line2D.Double bottom = new Line2D.Double(x,y + height ,x + width,y + height);
         g2.draw(bottom);
     }
 }
