@@ -37,6 +37,20 @@ public class Polygon
      */
     public double getArea()
     {
-
+        double area=0;
+        if( corners.size() < 3 ){
+            return area;
+        }
+        else {
+            area += Math.abs(
+                    corners.get(0).getX() * corners.get(1).getY() + corners.get(1).getX() * corners.get(2).getY() +
+                    corners.get(2).getX() * corners.get(0).getY() - corners.get(0).getY() * corners.get(1).getX() -
+                    corners.get(1).getY() * corners.get(2).getX() - corners.get(2).getY() * corners.get(0).getX()) / 2;
+            //corners.remove(2);
+            corners.remove(1);
+            //corners.remove(0);
+            area += getArea();
+        }
+        return area;
     }
 }
