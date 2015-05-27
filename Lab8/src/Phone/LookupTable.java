@@ -5,7 +5,6 @@ package Phone;
  *  A table for lookups and reverse lookups
  */
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class LookupTable {
