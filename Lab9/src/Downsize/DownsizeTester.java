@@ -9,14 +9,15 @@ public class DownsizeTester
 {
     public static void main(String[] args)
     {
-        LinkedList<String> staff = new LinkedList<String>();
+        LinkedList<String> staff = new LinkedList<>();
         staff.addLast("Dick");
         staff.addLast("Harry");
         staff.addLast("Romeo");
         staff.addLast("Tom");
         staff.addLast("Jim");
 
-        Business.downsize(staff);
+        //Business.downsize(staff);
+        Business.remove(staff);
 
         System.out.println(staff);
         System.out.println("Expected: [Dick, Romeo]");
